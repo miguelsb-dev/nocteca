@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties } from "react";
+import type { CSSProperties, PointerEvent as ReactPointerEvent } from "react";
 import type { Game } from "../lib/types";
 import { GameSpine } from "./GameSpine";
 import { PreviewCard } from "./PreviewCard";
@@ -12,6 +12,11 @@ type Props = {
   onOpen: (id: string) => void;
 };
 
+type ScrubState = {
+  pointerId: number;
+  rowIndex: number;
+};
+
 export function Shelf({ games, onOpen }: Props) {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [previewStyle, setPreviewStyle] = useState<CSSProperties>({});
@@ -19,6 +24,11 @@ export function Shelf({ games, onOpen }: Props) {
   const measureRef = useRef<HTMLDivElement>(null);
   const rowRefs = useRef<(HTMLElement | null)[]>([]);
   const leaveTimer = useRef<number | null>(null);
+  const activeIdRef = useRef<string | null>(null);
+  const scrubRef = useRef<ScrubState | null>(null);
+  const skipClickRef = useRef(false);
+
+  activeIdRef.current = activeId;
 
   function cancelLeave() {
     if (leaveTimer.current != null) {
@@ -28,6 +38,7 @@ export function Shelf({ games, onOpen }: Props) {
   }
 
   function scheduleLeave() {
+    if (scrubRef.current) return;
     cancelLeave();
     leaveTimer.current = window.setTimeout(() => {
       setActiveId(null);
@@ -87,10 +98,8 @@ export function Shelf({ games, onOpen }: Props) {
     const pad = 8;
     const desiredW = COVER_W + 40;
     const stageW = stageBox.width;
-    // Preferido: bajo la portada (a la derecha del lomo)
     let left = slotBox.left - stageBox.left;
     const width = Math.min(desiredW, Math.max(160, stageW - pad * 2));
-    // Si se sale por la derecha (último de la balda), desplazar a la izquierda
     if (left + width > stageW - pad) {
       left = stageW - pad - width;
     }
@@ -101,6 +110,77 @@ export function Shelf({ games, onOpen }: Props) {
       width,
       maxWidth: stageW - pad * 2,
     });
+  }
+
+  function findSlotAt(clientX: number, rowIndex: number): { id: string; el: HTMLElement } | null {
+    const rowEl = rowRefs.current[rowIndex];
+    if (!rowEl) return null;
+    const slots = [...rowEl.querySelectorAll<HTMLElement>(".book-slot")];
+    if (!slots.length) return null;
+
+    for (const slot of slots) {
+      const r = slot.getBoundingClientRect();
+      if (clientX >= r.left - 6 && clientX <= r.right + 6) {
+        const id = slot.dataset.gameId;
+        if (id) return { id, el: slot };
+      }
+    }
+
+    let best: { id: string; el: HTMLElement; d: number } | null = null;
+    for (const slot of slots) {
+      const id = slot.dataset.gameId;
+      if (!id) continue;
+      const r = slot.getBoundingClientRect();
+      const d = Math.abs(clientX - (r.left + r.right) / 2);
+      if (!best || d < best.d) best = { id, el: slot, d };
+    }
+    if (best && best.d < 72) return { id: best.id, el: best.el };
+    return null;
+  }
+
+  function activateAt(clientX: number, rowIndex: number) {
+    const hit = findSlotAt(clientX, rowIndex);
+    if (!hit) return;
+    cancelLeave();
+    setActiveId(hit.id);
+    const rowEl = rowRefs.current[rowIndex];
+    if (rowEl) placePreview(hit.el, rowEl);
+  }
+
+  function onRailPointerDown(e: ReactPointerEvent<HTMLDivElement>, rowIndex: number) {
+    if (e.pointerType === "mouse") return;
+    if (e.button !== 0) return;
+    scrubRef.current = { pointerId: e.pointerId, rowIndex };
+    e.currentTarget.setPointerCapture(e.pointerId);
+    activateAt(e.clientX, rowIndex);
+  }
+
+  function onRailPointerMove(e: ReactPointerEvent<HTMLDivElement>) {
+    const scrub = scrubRef.current;
+    if (!scrub || scrub.pointerId !== e.pointerId) return;
+    activateAt(e.clientX, scrub.rowIndex);
+  }
+
+  function endScrub(e: ReactPointerEvent<HTMLDivElement>) {
+    const scrub = scrubRef.current;
+    if (!scrub || scrub.pointerId !== e.pointerId) return;
+    scrubRef.current = null;
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
+    const id = activeIdRef.current;
+    if (id) {
+      skipClickRef.current = true;
+      onOpen(id);
+    }
+  }
+
+  function openGame(id: string) {
+    if (skipClickRef.current) {
+      skipClickRef.current = false;
+      return;
+    }
+    onOpen(id);
   }
 
   if (!games.length) {
@@ -122,20 +202,35 @@ export function Shelf({ games, onOpen }: Props) {
             }}
           >
             <div className="shelf-stage">
-              <div className="spine-rail">
+              <div
+                className="spine-rail"
+                onPointerDown={(e) => onRailPointerDown(e, i)}
+                onPointerMove={onRailPointerMove}
+                onPointerUp={endScrub}
+                onPointerCancel={(e) => {
+                  const scrub = scrubRef.current;
+                  if (!scrub || scrub.pointerId !== e.pointerId) return;
+                  scrubRef.current = null;
+                  if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+                    e.currentTarget.releasePointerCapture(e.pointerId);
+                  }
+                  scheduleLeave();
+                }}
+              >
                 {row.map((game) => (
                   <GameSpine
                     key={game.id}
                     game={game}
                     active={activeId === game.id}
                     onEnter={(el) => {
+                      if (scrubRef.current) return;
                       cancelLeave();
                       setActiveId(game.id);
                       const rowEl = rowRefs.current[i];
                       if (rowEl) placePreview(el, rowEl);
                     }}
                     onLeave={scheduleLeave}
-                    onClick={() => onOpen(game.id)}
+                    onClick={() => openGame(game.id)}
                   />
                 ))}
               </div>

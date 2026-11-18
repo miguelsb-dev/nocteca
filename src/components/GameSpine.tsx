@@ -32,6 +32,7 @@ export function GameSpine({ game, active, onEnter, onLeave, onClick }: Props) {
     <div
       ref={slotRef}
       className={`book-slot${active ? " is-active" : ""}`}
+      data-game-id={game.id}
       onMouseEnter={() => {
         if (slotRef.current) onEnter(slotRef.current);
       }}

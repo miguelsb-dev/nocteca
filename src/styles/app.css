@@ -305,6 +305,9 @@
   perspective: 1600px;
   perspective-origin: 18% 42%;
   overflow: visible;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .book-slot {
@@ -1174,33 +1177,146 @@ label.form-label {
 }
 
 @media (max-width: 900px) {
+  :root,
+  [data-theme="nocturna"] {
+    --spine-width: 48px;
+    --cover-width: 150px;
+    --font-size-body: 14px;
+  }
+
   .app-shell {
     grid-template-columns: 1fr;
   }
 
   .side-nav {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 40;
     height: auto;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 16px;
-    padding: 16px 18px;
+    gap: 12px;
+    padding: 12px 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg-elevated) 92%, transparent);
+  }
+
+  .side-nav .brand-name {
+    font-size: 22px;
+  }
+
+  .side-nav .brand-mark-logo {
+    width: 16px;
+    height: 16px;
+    transform: none;
   }
 
   .nav-list {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 4px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-left: auto;
+  }
+
+  .nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
+    white-space: nowrap;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-link.active {
+    box-shadow: none;
+    background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+    color: var(--text);
   }
 
   .nav-footer {
-    margin-top: 0;
-    margin-left: auto;
-    flex-direction: row;
+    display: none;
   }
 
   .main {
-    padding: 20px 18px 48px;
+    padding: 18px 14px 56px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+
+  .page-title {
+    font-size: clamp(28px, 9vw, 40px);
+    gap: 10px;
+  }
+
+  .toolbar {
+    width: 100%;
+  }
+
+  .toolbar .field {
+    min-width: 0;
+    flex: 1 1 120px;
+  }
+
+  .toolbar .btn {
+    flex: 0 0 auto;
+  }
+
+  .library-stage {
+    padding: 18px 6px 16px;
+    border-radius: 10px;
+  }
+
+  .spine-rail {
+    gap: 8px;
+    padding: 36px 36px 10px 2px;
+    min-height: calc(var(--spine-height) + 36px);
+    perspective: 1100px;
+  }
+
+  .book-slot.is-active .book {
+    transform: translate3d(8px, -14px, 70px) rotateY(-90deg) scale3d(1.08, 1.08, 1.08);
+  }
+
+  .book-slot.is-active::before {
+    width: calc(var(--cover-width) * 1.15 + 20px);
+    height: calc(var(--spine-height) * 1.15 + 40px);
+  }
+
+  .shelf-caption {
+    min-height: 0;
+  }
+
+  .shelf-row.has-preview .shelf-caption {
+    min-height: 120px;
+    max-height: 160px;
+    padding: 10px 4px 14px;
+  }
+
+  .preview-blurb {
+    position: relative;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .preview-blurb h3 {
+    font-size: 18px;
+  }
+
+  .preview-blurb p {
+    font-size: 13px;
   }
 
   .detail-layout,
@@ -1208,17 +1324,88 @@ label.form-label {
   .form-grid,
   .home-cover-rail {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .profile-dossier-media {
     max-height: none;
     aspect-ratio: 1 / 1;
+    max-width: 280px;
+    margin: 0 auto;
   }
 
-  .library-stage {
-    padding: 28px 14px 24px;
+  .profile-dossier-name {
+    font-size: clamp(28px, 8vw, 40px);
+    text-align: center;
   }
 
+  .profile-dossier-meta,
+  .profile-dossier-bio,
+  .profile-dossier-contacts {
+    text-align: center;
+  }
+
+  .profile-dossier-contacts {
+    justify-content: center;
+  }
+
+  .detail-cover {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .shot-grid,
+  .captures-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .gate-brand {
+    --gate-type: clamp(44px, 12vw, 64px);
+    gap: 10px;
+  }
+
+  .gate-cta {
+    min-width: 160px;
+    width: min(220px, 70vw);
+  }
+
+  .login-box {
+    margin: 24px 16px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  :root,
+  [data-theme="nocturna"] {
+    --spine-width: 42px;
+    --cover-width: 132px;
+  }
+
+  .side-nav {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .side-nav .brand-name {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+
+  .spine-rail {
+    gap: 6px;
+    padding: 28px 28px 8px 0;
+  }
+
+  .shot-grid,
+  .captures-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
