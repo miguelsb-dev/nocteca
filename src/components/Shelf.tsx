@@ -112,35 +112,38 @@ export function Shelf({ games, onOpen }: Props) {
     });
   }
 
-  function findSlotAt(clientX: number, rowIndex: number): { id: string; el: HTMLElement } | null {
+  function findSlotAt(
+    clientX: number,
+    clientY: number,
+    rowIndex: number,
+  ): { id: string; el: HTMLElement } | null {
     const rowEl = rowRefs.current[rowIndex];
     if (!rowEl) return null;
     const slots = [...rowEl.querySelectorAll<HTMLElement>(".book-slot")];
-    if (!slots.length) return null;
-
     for (const slot of slots) {
       const r = slot.getBoundingClientRect();
-      if (clientX >= r.left - 6 && clientX <= r.right + 6) {
+      // Solo cuenta si el dedo está dentro de la caja del lomo (no “pegado” al salir)
+      if (
+        clientX >= r.left &&
+        clientX <= r.right &&
+        clientY >= r.top &&
+        clientY <= r.bottom
+      ) {
         const id = slot.dataset.gameId;
         if (id) return { id, el: slot };
       }
     }
-
-    let best: { id: string; el: HTMLElement; d: number } | null = null;
-    for (const slot of slots) {
-      const id = slot.dataset.gameId;
-      if (!id) continue;
-      const r = slot.getBoundingClientRect();
-      const d = Math.abs(clientX - (r.left + r.right) / 2);
-      if (!best || d < best.d) best = { id, el: slot, d };
-    }
-    if (best && best.d < 72) return { id: best.id, el: best.el };
     return null;
   }
 
-  function activateAt(clientX: number, rowIndex: number) {
-    const hit = findSlotAt(clientX, rowIndex);
-    if (!hit) return;
+  function activateAt(clientX: number, clientY: number, rowIndex: number) {
+    const hit = findSlotAt(clientX, clientY, rowIndex);
+    if (!hit) {
+      // Fuera de cualquier lomo: cierra preview y no deja ninguno marcado
+      cancelLeave();
+      setActiveId(null);
+      return;
+    }
     cancelLeave();
     setActiveId(hit.id);
     const rowEl = rowRefs.current[rowIndex];
@@ -152,13 +155,13 @@ export function Shelf({ games, onOpen }: Props) {
     if (e.button !== 0) return;
     scrubRef.current = { pointerId: e.pointerId, rowIndex };
     e.currentTarget.setPointerCapture(e.pointerId);
-    activateAt(e.clientX, rowIndex);
+    activateAt(e.clientX, e.clientY, rowIndex);
   }
 
   function onRailPointerMove(e: ReactPointerEvent<HTMLDivElement>) {
     const scrub = scrubRef.current;
     if (!scrub || scrub.pointerId !== e.pointerId) return;
-    activateAt(e.clientX, scrub.rowIndex);
+    activateAt(e.clientX, e.clientY, scrub.rowIndex);
   }
 
   function endScrub(e: ReactPointerEvent<HTMLDivElement>) {
@@ -168,10 +171,12 @@ export function Shelf({ games, onOpen }: Props) {
     if (e.currentTarget.hasPointerCapture(e.pointerId)) {
       e.currentTarget.releasePointerCapture(e.pointerId);
     }
-    const id = activeIdRef.current;
-    if (id) {
+    // Solo abre si sueltas todavía encima de un lomo
+    const hit = findSlotAt(e.clientX, e.clientY, scrub.rowIndex);
+    setActiveId(null);
+    if (hit) {
       skipClickRef.current = true;
-      onOpen(id);
+      onOpen(hit.id);
     }
   }
 
@@ -189,7 +194,7 @@ export function Shelf({ games, onOpen }: Props) {
 
   return (
     <div className="shelf-room" ref={measureRef}>
-      <p className="shelf-touch-hint">Desliza el dedo por los lomos · suelta para abrir</p>
+      <p className="shelf-touch-hint">Desliza por los lomos · suelta encima para abrir</p>
       {shelves.map((row, i) => {
         const rowActive = activeShelfIndex === i;
         const rowGame = rowActive ? activeGame : null;
