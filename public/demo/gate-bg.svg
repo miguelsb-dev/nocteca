@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <rect width="1920" height="1080" fill="#0a0a0b"/>
+  <defs>
+    <radialGradient id="wash" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#121214"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#wash)"/>
+
+  <!-- Minimal gaming marks — flat, elegant, low contrast -->
+  <g fill="none" stroke="#f2f0eb" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- D-pad -->
+    <g transform="translate(220 260)" opacity=".14" stroke-width="1.75">
+      <path d="M0 -22 V22 M-22 0 H22"/>
+      <rect x="-10" y="-10" width="20" height="20" rx="1"/>
+    </g>
+
+    <!-- face buttons diamond -->
+    <g transform="translate(1700 250)" opacity=".14" stroke-width="1.6">
+      <circle cy="-26" r="9"/>
+      <circle cx="26" r="9"/>
+      <circle cy="26" r="9"/>
+      <circle cx="-26" r="9"/>
+    </g>
+
+    <!-- PlayStation-style marks -->
+    <g transform="translate(300 780)" opacity=".12" stroke-width="1.8">
+      <rect x="-11" y="-11" width="22" height="22" rx="1"/>
+      <path d="M28 -12 L40 10 H16 Z" transform="translate(8 0)"/>
+      <circle cx="78" r="12"/>
+      <path d="M108 -10 L128 10 M128 -10 L108 10"/>
+    </g>
+
+    <g transform="translate(1580 760)" opacity=".11" stroke-width="1.8">
+      <circle r="12"/>
+      <path d="M28 -10 L48 10 M48 -10 L28 10"/>
+      <rect x="62" y="-11" width="22" height="22" rx="1"/>
+      <path d="M108 -12 L120 10 H96 Z"/>
+    </g>
+
+    <!-- cartridge -->
+    <g transform="translate(180 480)" opacity=".13" stroke-width="1.6">
+      <rect x="-28" y="-40" width="56" height="80" rx="5"/>
+      <rect x="-16" y="-28" width="32" height="20" rx="2"/>
+      <path d="M-12 12 H12 M-12 22 H8"/>
+    </g>
+
+    <g transform="translate(1740 500)" opacity=".12" stroke-width="1.6">
+      <rect x="-28" y="-40" width="56" height="80" rx="5"/>
+      <rect x="-16" y="-28" width="32" height="20" rx="2"/>
+      <path d="M-12 12 H12 M-12 22 H8"/>
+    </g>
+
+    <!-- joystick -->
+    <g transform="translate(420 920)" opacity=".11" stroke-width="1.7">
+      <circle cy="-28" r="10"/>
+      <path d="M0 -18 V8"/>
+      <ellipse cy="18" rx="28" ry="12"/>
+    </g>
+
+    <!-- handheld -->
+    <g transform="translate(1480 920)" opacity=".11" stroke-width="1.6">
+      <rect x="-48" y="-32" width="96" height="64" rx="10"/>
+      <rect x="-30" y="-18" width="36" height="28" rx="3"/>
+      <circle cx="28" cy="-4" r="6"/>
+      <circle cx="40" cy="10" r="6"/>
+    </g>
+
+    <!-- pixel heart -->
+    <g transform="translate(960 200)" opacity=".1" stroke-width="1.5" fill="none">
+      <path d="M0 14 L-14 0 L-14 -8 L-7 -14 L0 -8 L7 -14 L14 -8 L14 0 Z"/>
+    </g>
+
+    <!-- small accent dots (one soft orange) -->
+    <g transform="translate(960 860)" opacity=".16">
+      <circle r="3" fill="#e85a2a" stroke="none"/>
+      <circle cx="-48" r="2.5" fill="#f2f0eb" fill-opacity=".35" stroke="none"/>
+      <circle cx="48" r="2.5" fill="#f2f0eb" fill-opacity=".25" stroke="none"/>
+    </g>
+
+    <!-- tiny controller top-right -->
+    <g transform="translate(1240 180)" opacity=".1" stroke-width="1.5">
+      <rect x="-40" y="-18" width="80" height="36" rx="14"/>
+      <circle cx="-18" r="7"/>
+      <circle cx="14" cy="-5" r="3.5"/>
+      <circle cx="24" cy="5" r="3.5"/>
+    </g>
+
+    <!-- tiny controller bottom-left -->
+    <g transform="translate(640 980)" opacity=".09" stroke-width="1.5">
+      <rect x="-40" y="-18" width="80" height="36" rx="14"/>
+      <circle cx="-18" r="7"/>
+      <circle cx="14" cy="-5" r="3.5"/>
+      <circle cx="24" cy="5" r="3.5"/>
+    </g>
+  </g>
+</svg>

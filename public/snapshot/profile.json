@@ -1,0 +1,13 @@
+{
+  "name": "Miguel Soto Blanco",
+  "handle": "@xMiguelSBx",
+  "bio": "De Algeciras. Juego y dejo por escrito lo que me interesa.\n\nNocteca es mi lista de partidas con nota propia. No suelo poner notas bajas. Si entro a un juego es porque ya intuyo a qué voy y sé que no es malo. Intento ser objetivo y no defiendo compañías.",
+  "photo": "/demo/profile.jpg",
+  "location": "Algeciras (Cádiz)",
+  "email": "xMiguelSBx@gmail.com",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/miguelsb-dev" },
+    { "label": "Instagram", "url": "https://www.instagram.com/x_miguelsb_x/" },
+    { "label": "X", "url": "https://x.com/xMiguelSBx" }
+  ]
+}

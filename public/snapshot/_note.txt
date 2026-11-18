@@ -1,0 +1,104 @@
+import type { Game, Profile } from "./types";
+
+export const DEMO_PROFILE: Profile = {
+  name: "Miguel",
+  handle: "@nocteca",
+  bio: "Biblioteca nocturna personal. Reseñas propias, capturas propias, sin ruido social.",
+  photo: "/demo/profile.svg",
+  location: "España",
+  links: [{ label: "GitHub", url: "https://github.com" }],
+};
+
+export const DEMO_GAMES: Game[] = [
+  {
+    id: "hollow-knight",
+    title: "Hollow Knight",
+    platform: "PC",
+    tags: ["metroidvania", "soulslike", "indie"],
+    cover: "/demo/covers/hollow-knight.svg",
+    screenshots: [
+      "/demo/screenshots/hollow-01.svg",
+      "/demo/screenshots/hollow-02.svg",
+      "/demo/screenshots/hollow-03.svg",
+    ],
+    description:
+      "Un reino subterráneo que se siente vivo y hostil a partes iguales. Precisión, silencio y belleza ruinosa.",
+    score: 96,
+    playedAt: "2024-11-02",
+    reviewPath: "review.md",
+    review: `## Silencio bajo tierra
+
+**Hollow Knight** no pide prisa. Pide atención.
+
+Las salas se memorizan como calles de una ciudad vieja. Cada jefe es una frase corta y dura. La carátula promete misterio; el juego lo cumple sin explicarte demasiado.
+
+### Por qué está aquí
+- Combate limpio
+- Mapa que se gana
+- Atmósfera que no se agota
+
+> Placeholder de biblioteca — reseña propia de ejemplo.`,
+    addedAt: "2024-11-03T10:00:00.000Z",
+    updatedAt: "2024-11-03T10:00:00.000Z",
+    placeholder: true,
+  },
+  {
+    id: "celeste",
+    title: "Celeste",
+    platform: "Switch",
+    tags: ["platformer", "precision", "indie"],
+    cover: "/demo/covers/celeste.svg",
+    screenshots: [
+      "/demo/screenshots/celeste-01.svg",
+      "/demo/screenshots/celeste-02.svg",
+    ],
+    description:
+      "Escalada emocional disfrazada de platformer. Muertes honestas, progreso real.",
+    score: 94,
+    playedAt: "2025-01-18",
+    reviewPath: "review.md",
+    review: `## Subir, caer, volver
+
+**Celeste** entiende que fallar puede ser parte del ritmo. El dash es un verbo; la montaña, un espejo.
+
+No es un juego «bonito» de escaparate: es preciso, cálido y exigente sin humillar.
+
+### Nota personal
+Lo reabrí en Switch para pantallas cortas. Sigue igual de afilado.
+
+> Placeholder de biblioteca — reseña propia de ejemplo.`,
+    addedAt: "2025-01-19T18:30:00.000Z",
+    updatedAt: "2025-01-19T18:30:00.000Z",
+    placeholder: true,
+  },
+  {
+    id: "hades",
+    title: "Hades",
+    platform: "PC",
+    tags: ["roguelike", "action", "narrative"],
+    cover: "/demo/covers/hades.svg",
+    screenshots: [
+      "/demo/screenshots/hades-01.svg",
+      "/demo/screenshots/hades-02.svg",
+      "/demo/screenshots/hades-03.svg",
+    ],
+    description:
+      "Cada escape es una conversación. Combate eléctrico, escritura afilada, estilo inconfundible.",
+    score: 97,
+    playedAt: "2025-03-04",
+    reviewPath: "review.md",
+    review: `## Una puerta más
+
+**Hades** convierte el bucle en teatro. Zagreus no solo corre: habla, escucha, vuelve.
+
+El arte empuja; la música empuja más. Y cuando crees que ya viste el truco, llega otra capa narrativa.
+
+### En la estantería
+Es el juego que enseño cuando alguien pregunta qué significa «diseño generoso».
+
+> Placeholder de biblioteca — reseña propia de ejemplo.`,
+    addedAt: "2025-03-05T09:15:00.000Z",
+    updatedAt: "2025-03-05T09:15:00.000Z",
+    placeholder: true,
+  },
+];
