@@ -1,3 +1,4 @@
+import { assetUrl } from "../lib/assets";
 import type { Game } from "../lib/types";
 
 type Props = {
@@ -7,7 +8,11 @@ type Props = {
 
 export function Captures({ games, onOpenShot }: Props) {
   const shots = games.flatMap((g) =>
-    (g.screenshots ?? []).map((src) => ({ src, title: g.title, id: g.id })),
+    (g.screenshots ?? []).map((src) => ({
+      src: assetUrl(src),
+      title: g.title,
+      id: g.id,
+    })),
   );
 
   return (

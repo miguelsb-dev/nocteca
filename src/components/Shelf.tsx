@@ -18,6 +18,24 @@ export function Shelf({ games, onOpen }: Props) {
   const [perShelf, setPerShelf] = useState(FALLBACK_PER_SHELF);
   const measureRef = useRef<HTMLDivElement>(null);
   const rowRefs = useRef<(HTMLElement | null)[]>([]);
+  const leaveTimer = useRef<number | null>(null);
+
+  function cancelLeave() {
+    if (leaveTimer.current != null) {
+      window.clearTimeout(leaveTimer.current);
+      leaveTimer.current = null;
+    }
+  }
+
+  function scheduleLeave() {
+    cancelLeave();
+    leaveTimer.current = window.setTimeout(() => {
+      setActiveId(null);
+      leaveTimer.current = null;
+    }, 140);
+  }
+
+  useEffect(() => () => cancelLeave(), []);
 
   useEffect(() => {
     const el = measureRef.current;
@@ -111,11 +129,12 @@ export function Shelf({ games, onOpen }: Props) {
                     game={game}
                     active={activeId === game.id}
                     onEnter={(el) => {
+                      cancelLeave();
                       setActiveId(game.id);
                       const rowEl = rowRefs.current[i];
                       if (rowEl) placePreview(el, rowEl);
                     }}
-                    onLeave={() => setActiveId(null)}
+                    onLeave={scheduleLeave}
                     onClick={() => onOpen(game.id)}
                   />
                 ))}

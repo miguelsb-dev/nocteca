@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { assetUrl } from "../lib/assets";
 
 const ENTERED_KEY = "nocteca_entered";
 
@@ -31,7 +32,11 @@ export function Gate() {
 
   return (
     <div className={`gate${leaving ? " is-leaving" : ""}`} data-theme="nocturna">
-      <div className="gate-bg" aria-hidden />
+      <div
+        className="gate-bg"
+        aria-hidden
+        style={{ ["--gate-bg" as string]: `url("${assetUrl("/demo/gate-bg.svg")}")` }}
+      />
       <div className="gate-scrim" aria-hidden />
 
       <div className="gate-content">

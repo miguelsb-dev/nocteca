@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { assetUrl } from "../lib/assets";
 import type { Game } from "../lib/types";
 
 type Props = {
@@ -49,7 +50,7 @@ export function GameSpine({ game, active, onEnter, onLeave, onClick }: Props) {
         <span className="book-face book-spine">
           {game.cover && (
             <span className="book-spine-art" aria-hidden>
-              <img src={game.cover} alt="" draggable={false} />
+              <img src={assetUrl(game.cover)} alt="" draggable={false} />
             </span>
           )}
           <span className="book-spine-shade" aria-hidden />
@@ -64,7 +65,7 @@ export function GameSpine({ game, active, onEnter, onLeave, onClick }: Props) {
 
         <span className="book-face book-cover">
           {game.cover ? (
-            <img src={game.cover} alt="" draggable={false} />
+            <img src={assetUrl(game.cover)} alt="" draggable={false} />
           ) : (
             <span className="book-cover-fallback">{game.title}</span>
           )}

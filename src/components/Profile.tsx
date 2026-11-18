@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { assetUrl } from "../lib/assets";
 import type { Profile as ProfileType } from "../lib/types";
 
 type Props = {
@@ -30,7 +31,7 @@ export function Profile({ profile, canEdit, onSave }: Props) {
       <div className="profile-dossier-media">
         <img
           className="profile-dossier-photo"
-          src={(editing ? draft.photo : profile.photo) || "/demo/profile.jpg"}
+          src={assetUrl((editing ? draft.photo : profile.photo) || "/demo/profile.jpg")}
           alt={profile.name}
         />
         <div className="profile-dossier-glow" aria-hidden />

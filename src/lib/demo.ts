@@ -43,12 +43,10 @@ Aunque no sea perfecto, la experiencia fue muy diferente a los demás juegos, y 
     score: 98,
     playedAt: "2023-08-11",
     reviewPath: "review.md",
-    review: `De los juegos que más he disfrutado. Para mí ningún problema en que fuera inmenso; esperé al DLC con las mismas ganas que al principal y ojalá sean muchísimas horas más. Punto malo: el reciclaje de enemigos.
-
-**9,75/10.** Mi souls fav sigue siendo DS3.
+    review: `De los juegos que más he disfrutado. Para mí ningún problema en que fuera inmenso; esperé al DLC con las mismas ganas que al principal y ojalá sean muchísimas horas más. Punto malo: el reciclaje de enemigos. Mi souls fav sigue siendo DS3.
 
 ### Shadow of the Erdtree
-Me pareció tanto contenido y un mapa tan nivelado que me abrumó — y mira que me gusta el juego. Aún así le doy un **8,5** porque siguieron reciclando algunas cosas… Radahn me lo hice al intento 40.`,
+Me pareció tanto contenido y un mapa tan nivelado que me abrumó — y mira que me gusta el juego. Aún así le bajé un poco la valoración porque siguieron reciclando algunas cosas… Radahn me lo hice al intento 40.`,
     addedAt: "2023-08-11T20:00:00.000Z",
     updatedAt: "2025-10-01T20:00:00.000Z",
   },
@@ -64,12 +62,10 @@ Me pareció tanto contenido y un mapa tan nivelado que me abrumó — y mira que
     playedAt: "2026-07-30",
     reviewPath: "review.md",
     review: `### Primera pasada (2023)
-Increíble; objetivamente el mejor juego de la saga. No se puede decir nada malo excepto que no han puesto Nación Aniquilación. Los escenarios, las mecánicas, las armas, la historia, los gráficos, las referencias a los primeros juegos… Entonces le di un **10**.
+Increíble; objetivamente el mejor juego de la saga. No se puede decir nada malo excepto que no han puesto Nación Aniquilación. Los escenarios, las mecánicas, las armas, la historia, los gráficos, las referencias a los primeros juegos… En su momento le di la máxima.
 
 ### Tras comprarlo y platinarlo
-Me lo pasé hace tiempo (pirata) pero ahora lo compré y lo platiné. Me encantó; objetivamente diría que es el mejor. Si contara la nostalgia, el 3 de la PS2. Gráficos muy buenos, la historia decente y el gameplay te hace querer jugar más.
-
-**9,3**`,
+Me lo pasé hace tiempo (pirata) pero ahora lo compré y lo platiné. Me encantó; objetivamente diría que es el mejor. Si contara la nostalgia, el 3 de la PS2. Gráficos muy buenos, la historia decente y el gameplay te hace querer jugar más.`,
     addedAt: "2023-08-14T20:00:00.000Z",
     updatedAt: "2026-07-29T23:45:51.000Z",
   },
@@ -86,9 +82,7 @@ Me lo pasé hace tiempo (pirata) pero ahora lo compré y lo platiné. Me encant�
     reviewPath: "review.md",
     review: `Nunca había jugado a un RE; solo de pasarme el mando en casa de amigos. La verdad es que me gustó mucho.
 
-Noté que está hecho con cariño, muy bien equilibrado en cuanto a todo, no muy largo (punto positivo) pero sin partes aburridas.
-
-**9**`,
+Noté que está hecho con cariño, muy bien equilibrado en cuanto a todo, no muy largo (punto positivo) pero sin partes aburridas.`,
     addedAt: "2023-08-15T20:00:00.000Z",
     updatedAt: "2023-08-15T20:00:00.000Z",
   },
@@ -105,9 +99,7 @@ Noté que está hecho con cariño, muy bien equilibrado en cuanto a todo, no muy
     reviewPath: "review.md",
     review: `El peor remake de Pokémon, encima de la mejor gen. Lo único decente es el combate. Prefiero mil veces jugar al original que a uno que parece una copia mala.
 
-La OST está bien también, aunque la de Leyendas es mucho mejor (en las mismas canciones).
-
-**4**`,
+La OST está bien también, aunque la de Leyendas es mucho mejor (en las mismas canciones).`,
     addedAt: "2023-08-16T20:00:00.000Z",
     updatedAt: "2023-08-16T20:00:00.000Z",
   },
@@ -125,9 +117,7 @@ La OST está bien también, aunque la de Leyendas es mucho mejor (en las mismas 
     reviewPath: "review.md",
     review: `De mis sagas favoritas.
 
-Siendo el último juego para consolas portátiles, creo que ha recogido muy bien todo lo anterior. Me da pena porque siempre me ha gustado jugar al MH en portátil, pero bueno: espero que todo sea por un bien mayor. Malzeno tier god.
-
-**9**`,
+Siendo el último juego para consolas portátiles, creo que ha recogido muy bien todo lo anterior. Me da pena porque siempre me ha gustado jugar al MH en portátil, pero bueno: espero que todo sea por un bien mayor. Malzeno tier god.`,
     addedAt: "2023-08-27T18:00:00.000Z",
     updatedAt: "2023-08-27T18:00:00.000Z",
   },
@@ -138,15 +128,13 @@ Siendo el último juego para consolas portátiles, creo que ha recogido muy bien
     tags: ["final-fantasy", "rpg"],
     cover: "/demo/covers/ffxv.jpg",
     description:
-      "OST, historia, gráficos y aventuras con colegas. Jugabilidad mejorable. Un 9.",
+      "OST, historia, gráficos y aventuras con colegas. Jugabilidad mejorable.",
     score: 90,
     playedAt: "2023-08-27",
     reviewPath: "review.md",
     review: `Sólo había jugado VII, Crisis Core y otros como Dissidia o Dirge of Cerberus. Vi que mucha gente odia el XV, pero yo creo que es muy bueno.
 
-El OST, la historia, los gráficos y vivir aventuras con colegas te hacen coger mucho cariño al juego. Jugabilidad mejorable.
-
-**9**`,
+El OST, la historia, los gráficos y vivir aventuras con colegas te hacen coger mucho cariño al juego. Jugabilidad mejorable.`,
     addedAt: "2023-08-27T21:00:00.000Z",
     updatedAt: "2023-08-27T21:00:00.000Z",
   },
@@ -165,9 +153,7 @@ El OST, la historia, los gráficos y vivir aventuras con colegas te hacen coger 
     review: `Los metroidvania no me llaman; este es mi primero y, aunque este estilo me siga sin gustar mucho, me ha encantado el juego.
 
 Lo mejor: el doblaje al castellano, el diseño general, las referencias y la música… Obra de arte.
-Lo peor: movilidad / controles.
-
-**8,5**`,
+Lo peor: movilidad / controles.`,
     addedAt: "2023-09-10T20:00:00.000Z",
     updatedAt: "2023-09-10T20:00:00.000Z",
   },
@@ -185,9 +171,7 @@ Lo peor: movilidad / controles.
     reviewPath: "review.md",
     review: `No recordaba mucho de cuando lo jugué de pequeño en la PSP, pero sabía que era un juegazo, y así lo he vuelto a sentir. Encima, un port de puta madre.
 
-Aunque no haya jugado a muchos, no dudo que sea de los mejores FF.
-
-**9,5/10**`,
+Aunque no haya jugado a muchos, no dudo que sea de los mejores FF.`,
     addedAt: "2023-12-28T20:00:00.000Z",
     updatedAt: "2023-12-28T20:00:00.000Z",
   },
@@ -205,9 +189,7 @@ Aunque no haya jugado a muchos, no dudo que sea de los mejores FF.
     reviewPath: "review.md",
     review: `Soy adicto al 100% en los juegos, pero en este no lo hice, aunque sí toqué todo (santuarios, kolog, golems, etc.).
 
-Me ha gustado mucho, pero lo tuve que empezar 3 veces y eso me quemó. Por lo general es increíble que esto esté en Switch.
-
-**9,5/10**`,
+Me ha gustado mucho, pero lo tuve que empezar 3 veces y eso me quemó. Por lo general es increíble que esto esté en Switch.`,
     addedAt: "2024-01-05T20:00:00.000Z",
     updatedAt: "2024-01-05T20:00:00.000Z",
   },
@@ -223,9 +205,7 @@ Me ha gustado mucho, pero lo tuve que empezar 3 veces y eso me quemó. Por lo ge
     score: 98,
     playedAt: "2024-01-15",
     reviewPath: "review.md",
-    review: `Lo mejor: las mejoras respecto al 1; ahora destacaría la movilidad y la fluidez de los combates. Por lo general, en diseño de niveles, pixel art, OST y demás, es increíble. También me hice el 100%.
-
-**9,75/10**`,
+    review: `Lo mejor: las mejoras respecto al 1; ahora destacaría la movilidad y la fluidez de los combates. Por lo general, en diseño de niveles, pixel art, OST y demás, es increíble. También me hice el 100%.`,
     addedAt: "2024-01-15T18:00:00.000Z",
     updatedAt: "2024-01-15T18:00:00.000Z",
   },
@@ -243,9 +223,7 @@ Me ha gustado mucho, pero lo tuve que empezar 3 veces y eso me quemó. Por lo ge
     reviewPath: "review.md",
     review: `La historia bien, los diseños de los Pokémon también bien por lo general y la mecánica de los teras está chula.
 
-El rendimiento mal, sin interiores, mucho espacio vacío, zonas de campo totalmente iguales y combates fáciles; los entrenadores random, pereza.
-
-**7**`,
+El rendimiento mal, sin interiores, mucho espacio vacío, zonas de campo totalmente iguales y combates fáciles; los entrenadores random, pereza.`,
     addedAt: "2024-01-15T20:00:00.000Z",
     updatedAt: "2024-01-15T20:00:00.000Z",
   },
@@ -262,9 +240,7 @@ El rendimiento mal, sin interiores, mucho espacio vacío, zonas de campo totalme
     reviewPath: "review.md",
     review: `Es un pedazo de juego. Para tenerlo todo tienes que romperte la cabeza si vas sin guía. El diseño de niveles, de arte y musical es muy bueno.
 
-Yo me llevo muy mal con tener que ir de un sitio a otro sin teleports y tardar 30 min entre zonas.
-
-**8/10**`,
+Yo me llevo muy mal con tener que ir de un sitio a otro sin teleports y tardar 30 min entre zonas.`,
     addedAt: "2024-01-15T22:00:00.000Z",
     updatedAt: "2024-01-15T22:00:00.000Z",
   },
@@ -279,9 +255,7 @@ Yo me llevo muy mal con tener que ir de un sitio a otro sin teleports y tardar 3
     score: 95,
     playedAt: "2024-01-19",
     reviewPath: "review.md",
-    review: `Me lo empecé varias veces con Nero / V / Dante, pero al final me lo he terminado haciendo con el DLC de Vergil jajaja. Está demasiado chulo; me dará un ataque al corazón presionando botones, pero worth it. Me lo rejugareé con los demás.
-
-**9,5/10**`,
+    review: `Me lo empecé varias veces con Nero / V / Dante, pero al final me lo he terminado haciendo con el DLC de Vergil jajaja. Está demasiado chulo; me dará un ataque al corazón presionando botones, pero worth it. Me lo rejugareé con los demás.`,
     addedAt: "2024-01-19T20:00:00.000Z",
     updatedAt: "2024-01-19T20:00:00.000Z",
   },
@@ -292,13 +266,13 @@ Yo me llevo muy mal con tener que ir de un sitio a otro sin teleports y tardar 3
     tags: ["final-fantasy", "rpg", "remake"],
     cover: "/demo/covers/ff7-remake.jpg",
     description:
-      "Experiencia de 10 en su momento. Tras Rebirth, bajé la nota al 7,5.",
+      "Experiencia de diez en su momento. Tras Rebirth, la valoré distinto.",
     score: 75,
     playedAt: "2024-01-29",
     reviewPath: "review.md",
     review: `Las alteraciones en la historia respecto al original deben de ser parte de algo canon; se verá en Rebirth, así que perfecto. Luego los gráficos, cinemáticas, los detalles de cada parte de cada poblado, etc.
 
-Fue una experiencia de 10; en su momento le di un **9,9**. Tras Rebirth, la bajo al **7,5** para ponerle a ese un 10.`,
+Fue una experiencia de diez. Tras Rebirth, bajé su valoración para dejar el techo a ese.`,
     addedAt: "2024-01-29T20:00:00.000Z",
     updatedAt: "2026-01-07T20:00:00.000Z",
   },
@@ -310,7 +284,7 @@ Fue una experiencia de 10; en su momento le di un **9,9**. Tras Rebirth, la bajo
     cover: "/demo/covers/plza.jpg",
     screenshots: ["/demo/screenshots/plza/01.jpg", "/demo/screenshots/plza/02.jpg", "/demo/screenshots/plza/03.jpg", "/demo/screenshots/plza/04.jpg", "/demo/screenshots/plza/05.jpg", "/demo/screenshots/plza/06.jpg", "/demo/screenshots/plza/07.jpg", "/demo/screenshots/plza/08.jpg", "/demo/screenshots/plza/09.jpg", "/demo/screenshots/plza/10.jpg", "/demo/screenshots/plza/11.jpg", "/demo/screenshots/plza/12.jpg", "/demo/screenshots/plza/13.jpg", "/demo/screenshots/plza/14.jpg", "/demo/screenshots/plza/15.jpg", "/demo/screenshots/plza/16.jpg", "/demo/screenshots/plza/17.jpg"],
     description:
-      "+70 h / 100%. Personajes muy buenos; combate raro; música muy buena. Un 8.",
+      "+70 h / 100%. Personajes muy buenos; combate raro; música muy buena.",
     score: 80,
     playedAt: "2025-10-25",
     reviewPath: "review.md",
@@ -320,9 +294,7 @@ Fue una experiencia de 10; en su momento le di un **9,9**. Tras Rebirth, la bajo
 - Misiones principales y secundarias
 - Tornillos coloridos
 
-Personajes muy buenos, historia no muy impactante, buen mapeado pero soso y poco variado estéticamente, el combate es algo raro, la música muy buena.
-
-**8**`,
+Personajes muy buenos, historia no muy impactante, buen mapeado pero soso y poco variado estéticamente, el combate es algo raro, la música muy buena.`,
     addedAt: "2025-10-25T20:00:00.000Z",
     updatedAt: "2025-10-25T20:00:00.000Z",
   },
@@ -339,9 +311,7 @@ Personajes muy buenos, historia no muy impactante, buen mapeado pero soso y poco
     reviewPath: "review.md",
     review: `(Fallo mío haberlo empezado después del Rebirth.) Aún así, las primeras 10 horas no me estaba enganchando, pero poco a poco, sobre mitad del juego, ya le estaba cogiendo cariño.
 
-La historia muy muy buena y de las más complejas; la música en su línea. Final perfecto.
-
-**9**`,
+La historia muy muy buena y de las más complejas; la música en su línea. Final perfecto.`,
     addedAt: "2026-01-04T18:00:00.000Z",
     updatedAt: "2026-01-04T18:00:00.000Z",
   },
@@ -353,15 +323,13 @@ La historia muy muy buena y de las más complejas; la música en su línea. Fina
     cover: "/demo/covers/links-awakening.jpg",
     screenshots: ["/demo/screenshots/links-awakening/01.jpg", "/demo/screenshots/links-awakening/02.jpg"],
     description:
-      "No jugué al original. Estilo artístico muy bonito; fácil mecánicamente. Un 8.",
+      "No jugué al original. Estilo artístico muy bonito; fácil mecánicamente.",
     score: 80,
     playedAt: "2026-01-04",
     reviewPath: "review.md",
     review: `No jugué al original. Lo noté un poco «deberías de probar a ver qué pasa si le echas sal a las plantas»; alguna cosa tuve que mirarla en la guía por agilizar.
 
-Estilo artístico muy bonito, la música está chula. Es bastante fácil mecánicamente.
-
-**8**`,
+Estilo artístico muy bonito, la música está chula. Es bastante fácil mecánicamente.`,
     addedAt: "2026-01-04T20:00:00.000Z",
     updatedAt: "2026-01-04T20:00:00.000Z",
   },
@@ -379,9 +347,7 @@ Estilo artístico muy bonito, la música está chula. Es bastante fácil mecáni
     reviewPath: "review.md",
     review: `Mi favorito es el 3, aunque sé que el 1 está hecho con manos de cirujano. Este me ha gustado por lo general, pero sí es cierto que se siente algo diferente la experiencia.
 
-La música es increíble, como el gameplay; lo del desierto ha sido nefasto.
-
-**8**`,
+La música es increíble, como el gameplay; lo del desierto ha sido nefasto.`,
     addedAt: "2026-01-04T22:00:00.000Z",
     updatedAt: "2026-01-04T22:00:00.000Z",
   },
@@ -392,15 +358,13 @@ La música es increíble, como el gameplay; lo del desierto ha sido nefasto.
     tags: ["rpg", "acción", "open-world"],
     cover: "/demo/covers/dragons-dogma-2.jpg",
     description:
-      "Experiencia singleplayer bastante única; a veces de comedia. Clases chulas. Entretenido. Un 7.",
+      "Experiencia singleplayer bastante única; a veces de comedia. Clases chulas. Entretenido.",
     score: 70,
     playedAt: "2026-01-07",
     reviewPath: "review.md",
     review: `Es un buen juego; puede ser hasta un juego de comedia por las cosas que te pasan. Es bastante única la experiencia singleplayer.
 
-La historia no está mal, la música muy normal, y las clases muy chulas con sus ataques especiales. Es entretenido.
-
-**7**`,
+La historia no está mal, la música muy normal, y las clases muy chulas con sus ataques especiales. Es entretenido.`,
     addedAt: "2026-01-07T18:00:00.000Z",
     updatedAt: "2026-01-07T18:00:00.000Z",
   },
@@ -411,13 +375,13 @@ La historia no está mal, la música muy normal, y las clases muy chulas con sus
     tags: ["final-fantasy", "rpg", "remake"],
     cover: "/demo/covers/ff7-rebirth.jpg",
     description:
-      "Me tocó la fibra. Música, arte, guion, personajes, paisajes… Un 10.",
+      "Me tocó la fibra. Música, arte, guion, personajes, paisajes…",
     score: 100,
     playedAt: "2026-01-07",
     reviewPath: "review.md",
     review: `Hoy día es difícil sorprenderme con un juego o que me toque la fibra de alguna forma, pero este lo ha hecho. Música, arte, guion, personajes, paisajes y sus ciudades… No tengo espacio para más.
 
-Al Remake le puse un 9; lo bajo al 7,5 para ponerle a este un **10**.`,
+Al Remake le bajé la valoración para dejarle el techo a este.`,
     addedAt: "2026-01-07T20:00:00.000Z",
     updatedAt: "2026-01-07T20:00:00.000Z",
   },
@@ -429,15 +393,13 @@ Al Remake le puse un 9; lo bajo al 7,5 para ponerle a este un **10**.`,
     cover: "/demo/covers/dq1-hd2d.jpg",
     screenshots: ["/demo/screenshots/dq1-hd2d/01.jpg", "/demo/screenshots/dq1-hd2d/02.jpg", "/demo/screenshots/dq1-hd2d/03.jpg", "/demo/screenshots/dq1-hd2d/04.jpg", "/demo/screenshots/dq1-hd2d/05.jpg", "/demo/screenshots/dq1-hd2d/06.jpg", "/demo/screenshots/dq1-hd2d/07.jpg", "/demo/screenshots/dq1-hd2d/08.jpg", "/demo/screenshots/dq1-hd2d/09.jpg", "/demo/screenshots/dq1-hd2d/10.jpg", "/demo/screenshots/dq1-hd2d/11.jpg", "/demo/screenshots/dq1-hd2d/12.jpg"],
     description:
-      "Mi primer DQ. Muy buena dirección de arte; complicado; da pie al segundo. Un 9,2.",
+      "Mi primer DQ. Muy buena dirección de arte; complicado; da pie al segundo.",
     score: 92,
     playedAt: "2026-01-07",
     reviewPath: "review.md",
     review: `Mi primer DQ. Muy buena dirección de arte, diseño de mazmorras, de ciudades, de personajes. Es bastante complicado y hay que levelear bien.
 
-La música es bonita pero poco variada. Me gusta cómo termina y da pie al segundo juego.
-
-**9,2**`,
+La música es bonita pero poco variada. Me gusta cómo termina y da pie al segundo juego.`,
     addedAt: "2026-01-07T22:00:00.000Z",
     updatedAt: "2026-01-07T22:00:00.000Z",
   },
@@ -454,9 +416,7 @@ La música es bonita pero poco variada. Me gusta cómo termina y da pie al segun
     reviewPath: "review.md",
     review: `Completado al 100% (obvio miré cosas en guías), pero me ha dado una vibe rara en general.
 
-Los puzles están muy bien; lo más lioso es saber a dónde ir. El diseño de monstruos y personajes, y sobre todo el final, me ha encantado.
-
-**8,6**`,
+Los puzles están muy bien; lo más lioso es saber a dónde ir. El diseño de monstruos y personajes, y sobre todo el final, me ha encantado.`,
     addedAt: "2026-01-19T20:00:00.000Z",
     updatedAt: "2026-01-19T20:00:00.000Z",
   },
@@ -473,9 +433,7 @@ Los puzles están muy bien; lo más lioso es saber a dónde ir. El diseño de mo
     reviewPath: "review.md",
     review: `Mi primer Fire Emblem. Me ha encantado: no esperaba que me gustara tanto combinar un tablero de táctica con un estilo anime.
 
-Historia muy buena, la relación escalable entre personajes y la progresión de clases son geniales. El final es complicado.
-
-**9,6**`,
+Historia muy buena, la relación escalable entre personajes y la progresión de clases son geniales. El final es complicado.`,
     addedAt: "2026-02-03T20:00:00.000Z",
     updatedAt: "2026-02-03T20:00:00.000Z",
   },
@@ -492,9 +450,7 @@ Historia muy buena, la relación escalable entre personajes y la progresión de 
     reviewPath: "review.md",
     review: `Primera vez con un Inazuma y, aunque sea de hace casi 20 años, no se me ha hecho ni pesado ni aburrido: más bien todo lo contrario.
 
-La historia es increíble y me ha gustado bastante esta forma diferente de implementar el fútbol en un videojuego.
-
-**9,4**`,
+La historia es increíble y me ha gustado bastante esta forma diferente de implementar el fútbol en un videojuego.`,
     addedAt: "2026-02-15T20:00:00.000Z",
     updatedAt: "2026-02-15T20:00:00.000Z",
   },
@@ -511,9 +467,7 @@ La historia es increíble y me ha gustado bastante esta forma diferente de imple
     reviewPath: "review.md",
     review: `Jugué de pequeño a los tres de Game Boy y este nunca lo había terminado.
 
-Es un remake perfecto: no ha perdido lo bueno que tenía la tercera generación. Bien hecha la banda sonora, el mapa, el vuelo libre, las megas y el postgame. Mi segunda gen favorita.
-
-**9**`,
+Es un remake perfecto: no ha perdido lo bueno que tenía la tercera generación. Bien hecha la banda sonora, el mapa, el vuelo libre, las megas y el postgame. Mi segunda gen favorita.`,
     addedAt: "2026-02-27T20:00:00.000Z",
     updatedAt: "2026-02-27T20:00:00.000Z",
   },
@@ -531,9 +485,7 @@ Es un remake perfecto: no ha perdido lo bueno que tenía la tercera generación.
     reviewPath: "review.md",
     review: `El mejor spin-off de Pokémon. Hay cosas mejorables de eficiencia.
 
-La historia es una de las mejores de Pokémon y realmente me dejó con un cuerpo raro entre alegría y tristeza. Ahora adoro aún más a los Pokémon y se merecen lo mejor. Me ha encantado.
-
-**9,2**`,
+La historia es una de las mejores de Pokémon y realmente me dejó con un cuerpo raro entre alegría y tristeza. Ahora adoro aún más a los Pokémon y se merecen lo mejor. Me ha encantado.`,
     addedAt: "2026-03-27T20:00:00.000Z",
     updatedAt: "2026-03-27T20:00:00.000Z",
   },
@@ -550,9 +502,7 @@ La historia es una de las mejores de Pokémon y realmente me dejó con un cuerpo
     reviewPath: "review.md",
     review: `Después de echarle 400 h de chico, pensaba que lo tenía sobrevalorado por la nostalgia. No.
 
-La ambientación, el jazz, los legendarios, los diseños, el lore, la Liga, Helio, el Mundo Distorsión… Será mejorable, pero para mí ha sido y será perfecto.
-
-**10/10**`,
+La ambientación, el jazz, los legendarios, los diseños, el lore, la Liga, Helio, el Mundo Distorsión… Será mejorable, pero para mí ha sido y será perfecto.`,
     addedAt: "2026-05-26T20:00:00.000Z",
     updatedAt: "2026-05-26T20:00:00.000Z",
   },
@@ -564,15 +514,13 @@ La ambientación, el jazz, los legendarios, los diseños, el lore, la Liga, Heli
     cover: "/demo/covers/oot-3d.jpg",
     screenshots: ["/demo/screenshots/oot-3d/01.jpg", "/demo/screenshots/oot-3d/02.jpg", "/demo/screenshots/oot-3d/03.jpg", "/demo/screenshots/oot-3d/04.jpg", "/demo/screenshots/oot-3d/05.jpg", "/demo/screenshots/oot-3d/06.jpg", "/demo/screenshots/oot-3d/07.jpg", "/demo/screenshots/oot-3d/08.jpg", "/demo/screenshots/oot-3d/09.jpg", "/demo/screenshots/oot-3d/10.jpg", "/demo/screenshots/oot-3d/11.jpg", "/demo/screenshots/oot-3d/12.jpg", "/demo/screenshots/oot-3d/13.jpg", "/demo/screenshots/oot-3d/14.jpg", "/demo/screenshots/oot-3d/15.jpg", "/demo/screenshots/oot-3d/16.jpg", "/demo/screenshots/oot-3d/17.jpg", "/demo/screenshots/oot-3d/18.jpg", "/demo/screenshots/oot-3d/19.jpg", "/demo/screenshots/oot-3d/20.jpg", "/demo/screenshots/oot-3d/21.jpg", "/demo/screenshots/oot-3d/22.jpg"],
     description:
-      "Muy buen juego. Cámara y fijado a enemigos, lo peor. Valorado hoy: un 8,9.",
+      "Muy buen juego. Cámara y fijado a enemigos, lo peor. Valorado hoy:",
     score: 89,
     playedAt: "2026-06-25",
     reviewPath: "review.md",
     review: `Muy buen juego. La cámara (aunque original) y el fijado a enemigos fueron lo peor.
 
-Entiendo que para la época estuviera años adelantado y fuera un 10, pero después de haber jugado muchos juegos y valorándolo hoy le doy un 8,9, que no está mal.
-
-**8,9**`,
+Entiendo que para la época estuviera años adelantado y fuera un 10, pero después de haber jugado muchos juegos y valorándolo hoy le doy un 8,9, que no está mal.`,
     addedAt: "2026-06-25T20:00:00.000Z",
     updatedAt: "2026-06-25T20:00:00.000Z",
   },
@@ -589,9 +537,7 @@ Entiendo que para la época estuviera años adelantado y fuera un 10, pero despu
     reviewPath: "review.md",
     review: `Prácticamente igual que el primero en gameplay y gráficos, exceptuando la historia: me ha parecido menos interesante y demasiado fumadón en ciertos puntos, aunque mejora al final.
 
-De igual forma me ha gustado bastante.
-
-**8,3**`,
+De igual forma me ha gustado bastante.`,
     addedAt: "2026-07-02T20:00:00.000Z",
     updatedAt: "2026-07-02T20:00:00.000Z",
   },
@@ -608,9 +554,7 @@ De igual forma me ha gustado bastante.
     reviewPath: "review.md",
     review: `Se nota la mejora general, aunque en mecánicas y gameplay sigue siendo igual. Hay correcciones de calidad de vida que se agradecen.
 
-Me gusta que haya más cinemáticas y más texto. La historia de este es muy buena.
-
-**9,6**`,
+Me gusta que haya más cinemáticas y más texto. La historia de este es muy buena.`,
     addedAt: "2026-07-12T20:00:00.000Z",
     updatedAt: "2026-07-12T20:00:00.000Z",
   },
@@ -627,9 +571,7 @@ Me gusta que haya más cinemáticas y más texto. La historia de este es muy bue
     reviewPath: "review.md",
     review: `Mejora mucho a partir de la mitad; el principio es algo lento. La fluidez de combos y el combate, igual. Los personajes son buenos.
 
-Punto positivo: la duración — no hay que extender si no hay motivo. La música es perfecta y el trasfondo / los speeches también.
-
-**8,2**`,
+Punto positivo: la duración — no hay que extender si no hay motivo. La música es perfecta y el trasfondo / los speeches también.`,
     addedAt: "2026-08-17T01:11:47.000Z",
     updatedAt: "2026-08-17T01:11:47.000Z",
   }

@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { assetUrl } from "../lib/assets";
 import { renderMarkdown } from "../lib/markdown";
+import { stripScoreMentions } from "../lib/text";
 import type { Game } from "../lib/types";
 import { Lightbox } from "./Lightbox";
 
@@ -13,7 +15,8 @@ type Props = {
 
 export function GameDetail({ game, canEdit, onBack, onEdit, onDelete }: Props) {
   const [light, setLight] = useState<string | null>(null);
-  const html = renderMarkdown(game.review ?? "");
+  const html = renderMarkdown(stripScoreMentions(game.review ?? ""));
+  const header = game.description ? stripScoreMentions(game.description) : "";
 
   return (
     <article>
@@ -36,7 +39,7 @@ export function GameDetail({ game, canEdit, onBack, onEdit, onDelete }: Props) {
       <div className="detail-layout">
         <div>
           <div className="detail-cover">
-            {game.cover && <img src={game.cover} alt={game.title} />}
+            {game.cover && <img src={assetUrl(game.cover)} alt={game.title} />}
             {typeof game.score === "number" && (
               <span className="detail-score-badge">{game.score}</span>
             )}
@@ -57,10 +60,10 @@ export function GameDetail({ game, canEdit, onBack, onEdit, onDelete }: Props) {
             ))}
           </div>
 
-          {game.description && (
+          {header && (
             <div className="detail-header-blurb">
               <p className="page-kicker">Encabezado</p>
-              <p className="detail-header-text">{game.description}</p>
+              <p className="detail-header-text">{header}</p>
             </div>
           )}
 
@@ -69,8 +72,13 @@ export function GameDetail({ game, canEdit, onBack, onEdit, onDelete }: Props) {
           {!!game.screenshots?.length && (
             <div className="shot-grid">
               {game.screenshots.map((src) => (
-                <button type="button" className="shot-thumb" key={src} onClick={() => setLight(src)}>
-                  <img src={src} alt="" />
+                <button
+                  type="button"
+                  className="shot-thumb"
+                  key={src}
+                  onClick={() => setLight(assetUrl(src))}
+                >
+                  <img src={assetUrl(src)} alt="" />
                 </button>
               ))}
             </div>

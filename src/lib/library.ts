@@ -1,10 +1,11 @@
+import { assetUrl } from "./assets";
 import { DEMO_GAMES, DEMO_PROFILE } from "./demo";
 import { canMutate, isTauri } from "./auth";
 import type { Game, LibraryIndex, Profile, SortMode } from "./types";
 
-const SNAPSHOT_URL = "/snapshot/library.json";
-const PROFILE_URL = "/snapshot/profile.json";
-const STORAGE_KEY = "nocteca_library_local_v12";
+const SNAPSHOT_URL = assetUrl("/snapshot/library.json");
+const PROFILE_URL = assetUrl("/snapshot/profile.json");
+const STORAGE_KEY = "nocteca_library_local_v13";
 const PROFILE_KEY = "nocteca_profile_local_v20";
 
 let games: Game[] = [...DEMO_GAMES];

@@ -107,7 +107,7 @@ function ShellLayout() {
                   {getFolderPath() ? "Cambiar carpeta" : "Abrir carpeta"}
                 </button>
               )}
-              {!isTauri() && getMode() === "owner" && (
+              {!isTauri() && getMode() === "owner" && !import.meta.env.DEV && (
                 <button
                   type="button"
                   className="btn btn-ghost"
