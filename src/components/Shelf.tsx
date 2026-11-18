@@ -189,6 +189,7 @@ export function Shelf({ games, onOpen }: Props) {
 
   return (
     <div className="shelf-room" ref={measureRef}>
+      <p className="shelf-touch-hint">Desliza el dedo por los lomos · suelta para abrir</p>
       {shelves.map((row, i) => {
         const rowActive = activeShelfIndex === i;
         const rowGame = rowActive ? activeGame : null;
