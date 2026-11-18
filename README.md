@@ -2,6 +2,8 @@
 
 Biblioteca personal de juegos (web + desktop Tauri). Local-first.
 
+**Web pública:** https://miguelsb-dev.github.io/nocteca/
+
 ## Arranque
 
 ```bash
@@ -27,3 +29,5 @@ Elegir/crear una carpeta `Nocteca/` con:
 ## Publicar snapshot web
 
 Owner en desktop/web-auth: **Exportar ZIP** o copiar `library.json` + assets a `public/snapshot/` (y covers a rutas servidas). La web pública sirve ese snapshot read-only.
+
+Cada push a `main` despliega a GitHub Pages automáticamente.
